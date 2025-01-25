@@ -8,7 +8,10 @@ int main() {
     else if(n==4){printf("%s","Thursday");}
     else if(n==5){printf("%s","Friday");}
     else if(n==6){printf("%s","Saturday");}
-    else{printf("%s","Sunday");}
+    else if(n==7){printf("%s","Sunday");}
+    else{
+        printf("%s","Invalid");
+    }
     
     return 0;
 }
