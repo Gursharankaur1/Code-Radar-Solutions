@@ -8,7 +8,7 @@ int main() {
     if(n<0){
         printf("%s","Negative");
     }
-    else{
+    if(n==0){
         printf("%s","Zero");
     }
     return 0;
