@@ -13,7 +13,11 @@ int main() {
         printf("%d",a*b);
     }
     else{
-        printf("%d",a/b);
+        if(b==0){
+            printf("%s","Error");
+        }
+        else{
+        printf("%d",a/b);}
     }
     return 0;
 }
