@@ -8,7 +8,7 @@ int main() {
     else if(marks<90 && marks>=80){
         printf("%c",'B');
     }
-    else if(marks<80 and marks>=70){
+    else if(marks<80 && marks>=70){
         printf("%c",'C');
     }
     else if(marks<70 && marks>=60){
