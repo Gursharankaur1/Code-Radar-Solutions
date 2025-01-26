@@ -2,7 +2,10 @@
 int main() {
     int a,b;
     char c;
-    scanf("%d %d %c",&a,&b,&c);
+    if(scanf("%d %d %c",&a,&b,&c)!=3){
+        printf("%s","invalid input");
+        return 1;
+    }
     if(c=='+'){
         printf("%d",a+b);
     }
@@ -14,7 +17,7 @@ int main() {
     }
     else if(c=='/'){
         if(b==0){
-            printf("%s","Error");
+            printf("%s","error");
         }
         else{
         printf("%d",a/b);}
