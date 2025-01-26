@@ -1,7 +1,10 @@
 #include <stdio.h>
 int main() {
     int a;
-    scanf("%d",&a);
+    if(scanf("%d",&a)!=1){
+        printf("%s","Invalid input");
+        return 1;
+    }
     if(a==1){printf("%d",31);}
     else if(a==2){printf("%d",28);}
     else if(a==3){printf("%d",31);}
