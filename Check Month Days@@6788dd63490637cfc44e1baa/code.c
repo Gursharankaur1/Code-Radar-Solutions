@@ -12,11 +12,11 @@ int main() {
     else if(a==5){printf("%d",31);}
     else if(a==6){printf("%d",30);}
     else if(a==7){printf("%d",31);}
-    else if(a==8){printf("%d",30);}
-    else if(a==9){printf("%d",31);}
-    else if(a==10){printf("%d",30);}
-    else if(a==11){printf("%d",31);}
-    else if(a==12){printf("%d",30);}
+    else if(a==8){printf("%d",31);}
+    else if(a==9){printf("%d",30);}
+    else if(a==10){printf("%d",31);}
+    else if(a==11){printf("%d",30);}
+    else if(a==12){printf("%d",31);}
     else{printf("%s","Invalid month");}
     return 0;
 }
