@@ -18,6 +18,10 @@ int main() {
             min=array[k];
         }
     }
-    printf("%d",min);
+    if(max!=min){
+    printf("%d",min);}
+    else{
+        printf("%d",-1);
+    }
     return 0;
 }
