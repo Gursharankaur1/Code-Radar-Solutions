@@ -21,10 +21,10 @@ int main() {
             min=array[k];
         }
     }
-    if(max!=min){
-    printf("%d",min);}
+    if(max=min){
+    printf("%d",-1);}
     else{
-        printf("%d",-1);
+        printf("%d",min);
     }
     return 0;
 }
