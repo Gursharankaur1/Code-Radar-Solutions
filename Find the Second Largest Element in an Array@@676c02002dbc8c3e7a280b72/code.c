@@ -10,21 +10,19 @@ int main() {
         scanf("%d",&array[i]);
     }
     int max=array[0];
-    for(int j=0;j<n;j++){
-        if(array[j]>max){
-            max=array[j];
+    int second_max=-1;
+    for(int i=0;i<n;i++){
+        if(array[i]>max){
+            second_max=max;
+            max=array[i];
+        }
+        else if(array[i]>second_max && array[i]<max){
+            second_max=array[i];
         }
     }
-    int min=-1;
-    for(int k=0;k<n;k++){
-        if(array[k]>min && array[k]<max){
-            min=array[k];
-        }
-    }
-    if(max!=min){
-    printf("%d",min);}
-    else{
+    if(second_max==-1){
         printf("%d",-1);
     }
+    else{printf("%d",second_max);}
     return 0;
 }
