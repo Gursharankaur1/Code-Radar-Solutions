@@ -15,7 +15,7 @@ int main() {
             max=array[j];
         }
     }
-    int min=-1111111;
+    int min=-1;
     for(int k=0;k<n;k++){
         if(array[k]>min && array[k]<max){
             min=array[k];
