@@ -10,12 +10,12 @@ int main() {
         scanf("%d",&array[i]);
     }
     int max=array[0];
-    int min=0;
     for(int j=0;j<n;j++){
         if(array[j]>max){
             max=array[j];
         }
     }
+    int min=0;
     for(int k=0;k<n;k++){
         if(array[k]>min && array[k]<max){
             min=array[k];
