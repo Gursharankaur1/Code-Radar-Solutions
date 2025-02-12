@@ -6,7 +6,7 @@ int main() {
     if(b>max){
         max=b;
     }
-    if(c>max){
+    else if(c>max){
         max=c;
     }
     printf("%d",max);
