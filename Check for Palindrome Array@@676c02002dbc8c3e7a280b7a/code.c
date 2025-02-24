@@ -6,13 +6,14 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&array[i]);
     }
+    int k=1;
     for(int j=0;j<n;j++){
-        if(array[j]==array[n-j-1]){
-            printf("YES");
-        }
-        else{
-            printf("NO");
+        if(array[j]!=array[n-j-1]){
+            k=0;
+            break;
         }
     }
+    if(k){printf("YES");}
+    else{printf("NO");}
     return 0;
 }
