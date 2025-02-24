@@ -11,6 +11,7 @@ int main(){
         if(array[j]<=array[j+1]){
             k=1;
         }
+        else{k=0;}
     }
     if(k){
         printf("Sorted");
