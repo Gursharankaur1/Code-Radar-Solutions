@@ -8,7 +8,7 @@ int main(){
     }
     int k=1;
     for(int j=0;j<n;j++){
-        if(array[j]>array[j+1]){
+        if(array[j]>=array[j+1]){
             k=0;
             break;
         }
