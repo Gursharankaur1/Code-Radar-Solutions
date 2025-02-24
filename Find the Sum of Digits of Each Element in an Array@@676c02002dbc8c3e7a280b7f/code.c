@@ -1,3 +1,4 @@
+#include <stdio.h>
 void sum(int arr[],int n){
     int array[n];
     for(int i=0;i<n;i++){
@@ -13,7 +14,6 @@ void sum(int arr[],int n){
         printf("%d ",array[j]);
     }
 }
-#include <stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
