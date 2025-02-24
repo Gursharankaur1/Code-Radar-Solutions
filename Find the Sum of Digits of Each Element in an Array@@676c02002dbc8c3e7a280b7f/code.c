@@ -3,10 +3,12 @@ void sum(int arr[],int n){
     int array[n];
     for(int i=0;i<n;i++){
         int sum=0;
-        while(arr[i]!=0){
-            int r=arr[i]%10;
+        int temp=arr[i];
+        if(temp<0){temp=-temp;}
+        while(temp!=0){
+            int r=temp%10;
             sum+=r;
-            arr[i]=arr[i]/10;
+            temp=temp/10;
         }
         array[i]=sum;
     }
