@@ -6,12 +6,12 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&array[i]);
     }
-    int k=0;
+    int k=1;
     for(int j=0;j<n;j++){
-        if(array[j]<=array[j+1]){
-            k=1;
+        if(array[j]>array[j+1]){
+            k=0;
+            break;
         }
-       
     }
     if(k){
         printf("Sorted");
