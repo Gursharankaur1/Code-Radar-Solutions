@@ -1,12 +1,12 @@
-void isPrime(num){
+int isPrime(num){
     int count=0;
     for(int i=1;i<=num;i++){
-        if(num%i==2){
+        if(num%i==0){
            count+=1; 
         }
     }
-    if(count==2){printf("%d\n",1);}
-    else{printf("%d\n",0);}
+    if(count==2){return 1;}
+    else{return 0;}
 }
 #include <stdio.h>
 int main(){
