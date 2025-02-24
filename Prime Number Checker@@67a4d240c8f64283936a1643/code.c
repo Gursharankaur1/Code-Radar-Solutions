@@ -5,17 +5,10 @@ int isPrime(int num){
            count+=1; 
         }
     }
-    if(count==2){return 1;}
-    else{return 0;}
-}
-#include <stdio.h>
-int main(){
-    int t;
-    scanf("%d",&t);
-    while(t--){
-        int num;
-        scanf("%d",&num);
-        printf("%d\n",isPrime(num));
-    }
-    return 0;
+    if(count==2){
+        return 1;
+        }
+    else{
+        return 0;
+        }
 }
