@@ -20,6 +20,9 @@ int main(){
     if(max1==max2){
         printf("%d",-1);
     }
+    else if(n==1){
+        printf("%d",-1);
+    }
     else{
         printf("%d",max2);
     }
