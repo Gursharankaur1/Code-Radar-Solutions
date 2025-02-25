@@ -9,7 +9,7 @@ int main(){
     int t;
     scanf("%d",&t);
     for(int j=0;j<n;j++){
-        for(int k=0;k<n;k++){
+        for(int k=j+1;k<n;k++){
             if(array[j]+array[k]==t){
                 printf("%d %d\n",array[j],array[k]);
             }
