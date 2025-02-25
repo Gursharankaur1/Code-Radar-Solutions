@@ -1,28 +1,22 @@
 #include <stdio.h>
-int main() {
+#include <limits.h>
+int main(){
     int n;
     scanf("%d",&n);
     int array[n];
-    if(n<2){
-        printf("%d",-1);
-    }
     for(int i=0;i<n;i++){
         scanf("%d",&array[i]);
     }
-    int max=array[0];
-    int second_max=-1;
-    for(int i=0;i<n;i++){
-        if(array[i]>max){
-            second_max=max;
-            max=array[i];
+    int max1=INT_MIN, max2=INT_MIN;
+    for(int j=0;j<n;j++){
+        if(array[j]>max1){
+            max2=max1;
+            max=array[j];
         }
-        else if(array[i]>second_max && array[i]<max){
-            second_max=array[i];
+        else if(array[j]>max2){
+            max2=array[j];
         }
     }
-    if(second_max==-1){
-        printf("%d",-1);
-    }
-    else{printf("%d",second_max);}
+    printf("%d",max2);
     return 0;
 }
