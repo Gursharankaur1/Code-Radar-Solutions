@@ -17,6 +17,11 @@ int main(){
             max2=array[j];
         }
     }
-    printf("%d",max2);
+    if(max1==max2){
+        printf("%d",-1);
+    }
+    else{
+        printf("%d",max2);
+    }
     return 0;
 }
