@@ -11,6 +11,15 @@ int main(){
             printf("%d",array[j]);
             break;
         }
+        else if(array[0]>array[1]){
+            printf("%d",array[0]);
+            break;
+        }
+        else if(array[n-1]>array[n-2]){
+            printf("%d",array[n-1]);
+            break;
+        }
     }
+   
     return 0;
 }
