@@ -4,12 +4,12 @@ int main(){
     scanf("%d",&n);
     int array[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&array[i]);
+        scanf("%d",array[i]);
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
             if(array[i]==array[j]){
-                printf("%d",i);
+                printf("%d",array[i]);
                 break;
             }
         }
