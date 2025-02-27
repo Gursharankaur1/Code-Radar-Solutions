@@ -22,7 +22,7 @@ int main() {
         }
     }
     
-    if(!found) {
+    if(found==0) {
         printf("%d\n", -1);
     }
     
