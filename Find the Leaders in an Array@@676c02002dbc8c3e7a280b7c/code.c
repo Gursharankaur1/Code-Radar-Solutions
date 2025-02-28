@@ -18,8 +18,8 @@ int main()
         {isfound=0;
        break;
         }
-      }
-      if(isfound==1)
+      }}
+      if(isfound==1){
       printf("%d ",arr[j]);
     }
 }
