@@ -18,8 +18,8 @@ int main(){
             return 0;
         }
     }
-    if(count<n/2){
         printf("%d",-1);
-    }
+        return 0;
+    
     return 0;
 }
