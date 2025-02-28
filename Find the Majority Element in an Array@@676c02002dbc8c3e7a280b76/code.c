@@ -7,8 +7,8 @@ int main(){
         scanf("%d",&array[i]);
     }
     for(int i=0;i<n-1;i++){
-         int count=1;
-        for(int j=i+1;j<n;j++){
+         int count=0;
+        for(int j=0;j<n;j++){
             if(array[i]==array[j]){
                 count+=1;
             }
