@@ -8,7 +8,7 @@ int main(){
     }
     int t;
     scanf("%d",&t);
-    int same;
+    int same=1;
     for(int i=0;i<n;i++){
         if(array[i]!=array[0]){
             same=0;
