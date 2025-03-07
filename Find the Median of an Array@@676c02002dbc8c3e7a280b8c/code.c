@@ -17,11 +17,12 @@ int main(){
     }
     if(n%2==0){
         int e=n/2;
-        printf("%d",(array[e]+array[e+1])/2);
+        int avg=(array[e-1]+array[e])/2;
+        printf("%d",avg);
     }
     else{
         int e=(n/2)+0.5;
-        printf("%d",array[e]);
+        printf("%d",array[e-1]);
     }
     return 0;
 }
