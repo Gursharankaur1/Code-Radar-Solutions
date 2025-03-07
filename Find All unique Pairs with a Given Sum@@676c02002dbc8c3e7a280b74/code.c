@@ -10,8 +10,9 @@ int main(){
     scanf("%d",&t);
     int same;
     for(int i=0;i<n;i++){
-        if(array[i]!=array[j]){
+        if(array[i]!=array[0]){
             same=0;
+            break;
         }
     }
     if(same){
