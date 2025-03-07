@@ -1,3 +1,4 @@
+#include <stdio.h>
 void printPrimesInRange(int a,int b){
     int isprime=0;
     for(int i=a;i<=b;i++){
