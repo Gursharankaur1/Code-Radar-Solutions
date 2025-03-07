@@ -15,7 +15,7 @@ int main(){
     int a=array[0],b=array[1];
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
-            if(abs(array[i]-array[j])<diff){
+            if(abs(array[i]-array[j])<=diff){
                 diff=abs(array[i]-array[j]);
                 a=array[i];
                 b=array[j];
