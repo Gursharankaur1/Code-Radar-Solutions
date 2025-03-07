@@ -22,6 +22,11 @@ int main(){
             }
         }
     }
-printf("%d %d",b,a);
+if(a>b){
+    printf("%d %d",b,a);
+}
+else{
+    printf("%d %d",a,b);
+}
     return 0;
 }
