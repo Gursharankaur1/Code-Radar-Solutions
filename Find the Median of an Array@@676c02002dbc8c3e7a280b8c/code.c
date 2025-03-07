@@ -21,8 +21,8 @@ int main(){
         printf("%d",avg);
     }
     else{
-        int e=(n/2)+0.5;
-        printf("%d",array[e-1]);
+        int e=n/2;
+        printf("%d",array[e]);
     }
     return 0;
 }
