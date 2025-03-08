@@ -24,4 +24,4 @@ int main()
            }
 
         }
-     printf("%d %d\n",arr[j],count);}}
+     printf("%d ",arr[j]);}}
