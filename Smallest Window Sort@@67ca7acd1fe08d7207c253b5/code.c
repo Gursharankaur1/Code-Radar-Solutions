@@ -1,5 +1,5 @@
 int findUnsortedSubarray(int arr[],int n){
-    int m=0,n=0;
+    int m=0,p=0;
     for(int i=0;i<n;i++){
         if(arr[i]>arr[i+1]){
             m=i;
@@ -8,14 +8,14 @@ int findUnsortedSubarray(int arr[],int n){
     }
     for(int i=n-1;i>=0;i--){
         if(arr[i]<arr[i-1]){
-            n=i;
+            p=i;
             break;
         }
     }
-    if(m==0 && n==0){
+    if(m==0 && p==0){
         return 0;
     }
     else{
-        return m-n+1;
+        return m-p+1;
     }
 }
