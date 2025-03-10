@@ -1,4 +1,4 @@
-int findKthPositive(int arr[], int n, int k) {
+int findKthMissing(int arr[], int n, int k) {
     int left = 0, right = n - 1; 
     while (left <= right) {
         int mid = left + (right - left) / 2;
