@@ -4,6 +4,10 @@ int main(){
     char mystr[30];
     fgets(mystr,sizeof(mystr),stdin);
     int length = strlen(mystr);
-    printf("%d",length);
+    if(length==0){
+        printf("0");
+    }
+    else{
+    printf("%d",length);}
     return 0;
 }
