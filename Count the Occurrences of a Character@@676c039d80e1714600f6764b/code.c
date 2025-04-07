@@ -6,7 +6,7 @@ int main(){
     fgets(str,sizeof(str),stdin);
     scanf(" %c",&a);
     int length=strlen(str);
-    int count=0
+    int count=0;
     for(int i=0;i<length;i++){
         if(str[i]==a){
             count+=1;
