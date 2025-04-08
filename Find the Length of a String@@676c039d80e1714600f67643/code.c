@@ -3,7 +3,7 @@
 int main() {
     char mystr[30];
     fgets(mystr, sizeof(mystr), stdin);
-    if (mystr[0] == '\n') {
+    if (mystr[0] == '\0') {
         printf("0");
     } else {
         int length = strlen(mystr);
