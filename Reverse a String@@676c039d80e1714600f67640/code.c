@@ -2,7 +2,8 @@
 #include <string.h>
 int main() {
     char mystr[30];
-    scanf("%[^\n]s",mystr);
+    fgets(mystr, sizeof(mystr), stdin);
+    
     int len = strlen(mystr);
     for (int i = len - 1; i >= 0; i--) {
         printf("%c", mystr[i]);
