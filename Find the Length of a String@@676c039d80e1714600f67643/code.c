@@ -3,11 +3,12 @@
 int main() {
     char mystr[30];
     fgets(mystr, sizeof(mystr), stdin);
-    if (mystr[0] == ' ') {
-        printf("0");
-    } else {
-        int length = strlen(mystr);
-        printf("%d", length);
+    int size=0;
+    for(int i=0;mystr[i]!='\0';i++){
+        if(str[i]!=' '){
+            size++;
+        }
     }
+    printf("%d",size);
     return 0;
 }
