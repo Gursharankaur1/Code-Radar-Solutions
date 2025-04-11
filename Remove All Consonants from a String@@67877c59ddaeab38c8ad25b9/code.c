@@ -8,7 +8,7 @@ int main(){
         if(str[i]!='a'||'e'||'o'||'i'||'u'||'A'||'E'||'I'||'O'||'U'){
             continue;
         }
-        printf("%c"str[i]);
+        printf("%c",str[i]);
     }
     return 0;
 }
