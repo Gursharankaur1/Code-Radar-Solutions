@@ -10,7 +10,7 @@ int main(){
         for(int j=i+1;j<l;j++){
             if(str[i]==str[j]){
                 found=0;
-                break;
+                
             }
         }
         if(found==1){
