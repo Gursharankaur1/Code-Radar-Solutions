@@ -5,7 +5,7 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int l=strlen(str);
     for(int i=0;i<l;i++){
-        if(str[i]=='a'||'e'||'o'||'i'||'u'||'A'||'E'||'I'||'O'||'U'){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='O' || str[i]=='I' || str[i]=='U' || str[i]==' '){
             printf("%c",str[i]);
         }
     }
