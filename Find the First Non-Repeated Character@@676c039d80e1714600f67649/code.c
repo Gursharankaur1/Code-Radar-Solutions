@@ -5,12 +5,12 @@ int main(){
     fgets(str,sizeof(str),stdin);
     str[strcspn(str, "\n")] = '\0';
     int l=strlen(str);
-    for(int i=0;i<l-1;i++){
+    for(int i=0;i<l;i++){
         int found=1;
         for(int j=i+1;j<l;j++){
             if(str[i]==str[j]){
                 found=0;
-                
+                break;
             }
         }
         if(found==1){
