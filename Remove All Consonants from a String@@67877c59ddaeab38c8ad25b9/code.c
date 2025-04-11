@@ -5,10 +5,9 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int l=strlen(str);
     for(int i=0;i<l;i++){
-        if(str[i]!='a'||'e'||'o'||'i'||'u'||'A'||'E'||'I'||'O'||'U'){
-            continue;
+        if(str[i]=='a'||'e'||'o'||'i'||'u'||'A'||'E'||'I'||'O'||'U'){
+            printf("%c",str[i]);
         }
-        printf("%c",str[i]);
     }
     return 0;
 }
