@@ -6,14 +6,14 @@ int main(){
     str[strcspn(str, "\n")] = '\0';
     int l=strlen(str);
     for(int i=0;i<l;i++){
-        int found=0;
-        for(int j=i+1;j<l;j++){
-            if(str[i]==str[j]){
-                found+=1;
+        int found=1;
+        for(int j=0;j<l;j++){
+            if(str[i]==str[j] && i!=j){
+                found=0;
                 break;
             }
         }
-        if(found==0){
+        if(found==1){
             printf("%c",str[i]);
             return 0;
         }
